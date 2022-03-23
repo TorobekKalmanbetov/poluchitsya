@@ -1,0 +1,428 @@
+*{
+    margin: 0%;
+}
+body{
+    margin: 0%;
+}
+/*Начало header*/
+.header{
+    width: 100%;
+    height: 100px;
+}
+.contact{
+    width: 100%;
+    height: 40px;
+    background:grey;
+}
+/*Меню логотип, ПОНРАВИЛОСЬ. личный кабинет*/
+.header_menu{
+    width: 100%;
+    height: 60px;
+    background:black;
+    display: flex;
+}/*
+.sticky{
+    position: fixed;
+    top: 0;
+}
+.sticky+.header_menu{
+    padding-top: 60px;
+}*/
+.contact p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 15%;
+    word-spacing: 5px;
+}
+.header_logo{
+    padding-top: 13px;
+    padding-left: 15%;
+}
+/*Начало ссылок*/
+.main_menu{
+    padding-left: 30%;
+    padding-top:13px;
+}
+.main_menu a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em;
+}
+/*Анимация ссылок */
+.main_menu a:hover{
+    background: #737373;
+}
+.main_menu a:after{
+    background-color: #f66d52;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .6s ease-in-out;
+    -moz--transition: width .6s ease-in-out;
+    transition: width .6s ease-in-out;
+}
+.main_menu a:hover:after,
+.main_menu a:focus:after {
+    width: 100%;
+}
+/*Конец Header*/
+/*Начало информации о магазине*/
+.container{
+    width: 100%;
+    height: 600px;
+    margin: 0%;
+}
+/*Фотография на фон*/
+.main_pic{
+    width: 100%;
+    height: 600px;
+    margin: 0%;
+    background-image: url(../image/index-img/Rectangle\ 3.png);
+}
+/*Таблица */
+.brd_container{
+    position: absolute;
+    top: 220px;
+    border: 4px solid #FFFFFF;
+    box-sizing: border-box;
+    width: 320px;
+    height: 320px;
+    align-items: center;
+    text-align: center;
+    margin-left: 38%;
+    padding-top: 120px;
+}
+/*линия внутри таблицы*/
+.brd_brd_container{
+    border: 2px solid white;
+    width: 180px;
+    margin-left: 65px;
+}
+/*текст внутри т=аблицы*/
+.brd_container p{
+    padding-top: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/*Текст внутри container*/
+.text_container{
+    position: absolute;
+    text-align: center;
+    width: 600px;
+    top: 570px;
+    left: 26%;
+}
+.text_container p{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+/*Конец информации о магазине*/
+/*начало раздела о коллекции*/
+.container_collection{
+    width:100%;
+    height: 1050px;
+    background: black;
+}
+/*Сезон 2021-22*/
+.season{
+    position: absolute;
+    color: white;
+    width: 50%;
+    height: 700px;
+}
+.season h1{
+    padding-top: 100px;
+    padding-left: 260px;
+}
+.brd_season{
+    border: 1px solid white;
+    width: 100px;
+    margin-left: 300px ;
+    margin-top: 20px;
+}
+.container_{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.box{
+    border: 1px solid grey;
+    background-color: #737373;
+    height: 175px;
+}
+.box a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration:none;
+    color: white;
+}
+.box h3{
+    padding-top: 20px;
+}
+.box a:hover{
+    color:peru;
+}
+.photo_main_season{
+    margin-top: 175px;
+}
+/*Новая коллекция*/
+.new_collection{
+   background-image:url(../image/index-img/Rectangle\ 8.png) ;
+   background-repeat:no-repeat ;
+   position: absolute;
+   text-align: center;
+   margin-left: 51%;
+   width: 660px;
+   height: 600px;
+}
+.header_collection{
+    margin-top: 300px;
+}
+.header_collection p{
+    color: white;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.brd_collection{
+    border: 1px solid white;
+    width: 200px;
+    margin-left: 220px;
+    margin-top: 20px;
+}
+.button_collection{
+    border: 1px solid grey;
+    width: 150px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 235px;
+    padding: 10px;
+}
+.button_collection a{
+    text-decoration: none;
+    color: white;
+}
+.button_collection:hover{
+    background-color: #DCDCDC;
+}
+.button_collection a:hover{
+    color: black;
+}
+.text_new_collection{
+    margin-top: 250px;
+    text-align: center;
+    width: 500px;
+    margin-left: 80px;
+}
+.text_new_collection h1{
+    color: white;
+    text-transform: uppercase;
+    font-family:  'Playfair Display';
+}
+.brd_text_new{
+    border: 1px solid white;
+    margin-top: 20px;
+}
+.text_new_collection p{
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    line-height: 20px;
+}
+.brd_a{
+    border: 1px solid grey;
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 130px;
+}
+.brd_a a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.brd_a:hover{
+    background-color: #DCDCDC;
+}
+.brd_a a:hover{
+    color:black;
+}
+/*Конец*/
+/*Конец раздела о коллекции */
+/*Новые поступления*/
+.new_arrivals{
+    width: 100%;
+    height: 800px;
+    background: black;
+    text-align: center;
+}
+.new_arrivals h1{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+}
+.brd_arrivals{
+    border: 1px solid white;
+    width: 220px;
+    margin-top: 30px;
+    margin-left: 41.5%;
+}
+.container_arrivals{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-left: 18%;
+    
+}
+.box_one{
+    border: 1px solid grey;
+    background-color: #737373;
+    height: 190px;
+    margin: 24px;
+  
+}
+.box_one h3{
+    padding-top: 25px;
+}
+.box_one a{
+    text-decoration: none;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.box_one a:hover{
+    color:peru;
+}
+/*Конец*/
+/*Наши бренды*/
+.brand{
+    width: 100%;
+    height: 300px;
+    background: rgba(26, 31, 36, 0.911);
+    text-align: center;
+}
+.header_brand h1{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 70px;
+}
+.brd_brand{
+    border: 1px solid white;
+    width: 200px;
+    margin-top: 50px;
+    margin-left:42.5%;
+}
+.container_brand{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 30px;
+}
+.box_2 img{
+    width: 200px;
+    height: 80px;
+}
+/*Конец о брендах*/
+/*Налало подвала*/
+.footer{
+    width: 100%;
+    height: 300px;
+    background-image: url(../image/index-img/Rectangle\ 15.png);
+}
+.container_footer{
+    display: flex;
+    justify-content: space-around;
+}
+.info_shops{
+    width: 400px;
+    margin-top: 50px;
+}
+.info_shops h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info_shops p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: white;
+    margin-top: 30px;
+    line-height: 20px;
+}
+/*Категории*/
+.categories{
+    width: 240px;
+    margin-top: 50px ;
+}
+.categories h2{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.categories a button{
+    margin-top: 30px;
+    margin-left: 5px;
+    padding: 7px;
+    border: none;
+    background-color: rgba(26, 31, 36, 0.911);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.categories a button:hover{
+    background-color:#737373;
+}
+/*Рассылка*/
+.newsletter{
+    width: 300px;
+    margin-top: 50px ;
+}
+.newsletter h2{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.newsletter p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: white;
+    margin-top: 30px;
+    line-height: 20px;
+}
+.newsletter input{
+    margin-top: 30px ;
+    border: none;
+}
+input[type="text"]{
+    width: 150px;
+    height: 30px;
+    padding-left: 7px;
+    background: rgba(163, 163, 163, 0.473);
+    color: white;
+    outline: none;
+    border-radius: 25px 0 0 25px;
+}
+input[type="submit"]{
+    color: white;
+    width: 90px;
+    height: 32px;
+    outline: none;
+    cursor: pointer;
+    border-radius:0 25px 25px 0;
+    background: grey;
+}
+input[type="submit"]:hover{
+    background: #737373;
+}
+/*Конец подвала*/
